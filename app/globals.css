@@ -1,0 +1,7 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body{background:#f7faf5;color:#1f2937;font-family:"Noto Sans Bengali",system-ui,sans-serif}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marquee{display:flex;width:max-content;animation:marquee 40s linear infinite}.marquee:hover{animation-play-state:paused}
+@layer components{.btn{@apply inline-flex items-center justify-center rounded-lg px-3 py-1.5 text-sm font-medium transition sm:px-4 sm:py-2}
+.btn-primary{@apply bg-green-600 text-white hover:bg-green-700}.btn-ghost{@apply border border-green-600 text-green-700 hover:bg-green-50}
+.input{@apply w-full rounded-lg border border-gray-300 px-3 py-2 outline-none focus:border-green-600}}
